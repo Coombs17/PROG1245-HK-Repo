@@ -1,0 +1,74 @@
+/*Brayden Coombs 8922782*/
+body{
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+    font: 20px arial;
+
+}
+
+.headfoot{
+    border:5px solid pink;
+    border-radius: 40px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1,h2{
+    font-variant: small-caps;
+    color: lightblue;
+}
+
+footer p{
+    color: lightblue;
+    font-size: small;
+}
+
+aside{
+    float: right;
+    width: 23.33%;
+    padding: 10px;
+    margin: auto;
+}
+
+main{
+    float: left;
+    width: 56.66%;
+    padding: 5px;
+    margin: auto;
+}
+
+footer{
+    clear: both;
+}
+
+.mainimg{
+    border: 3px solid black;
+}
+
+figcaption{
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: large;
+
+}
+
+ul li{
+    list-style: none;
+    line-height: 150%;
+    
+}
+
+.parent > a{
+    text-decoration: none;
+    color: pink;
+}
+
+aside a:hover{
+    color: grey;
+}
