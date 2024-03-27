@@ -8,19 +8,22 @@ body{
 }
 
 .headfoot{
-    border: 5px solid pink;
+    border: 5px solid #c33764;
     border-radius: 40px;
     padding: 10px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, #c33764, #1d2671);
 }
 
 h1,h2{
     font-variant: small-caps;
-    color: lightblue;
+    color: #1d2671;
 }
 
 footer p{
-    color: lightblue;
+    color: white;
     font-size: small;
 }
 
@@ -40,6 +43,7 @@ main{
 
 footer{
     clear: both;
+
 }
 
 .mainimg{
@@ -66,9 +70,95 @@ ul li{
 
 .parent > a{
     text-decoration: none;
-    color: pink;
+    color: #c33764;
 }
 
 aside a:hover{
     color: grey;
+}
+
+/* Navigation */
+.flexnav{
+    background-color: #1d2671;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+
+.flexnav a{
+    color: #c33764;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.flexnav a:hover{
+    color: grey;
+}
+
+/* Gallery */
+.imgcollection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+
+}
+
+.image{
+margin-top: 40px;
+margin-left: 30px;
+width: 100%;
+height: auto;
+clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+
+}
+
+/* Contact */
+.contact-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #1d2671;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #c33764;
+}
+
+.mediabody{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
 }
